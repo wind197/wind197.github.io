@@ -9,7 +9,7 @@ export class GithubApi {
   constructor(private readonly http: HttpClient) {}
 
   getRepos(): Observable<any> {
-    return this.http.get<Array<GithubRepo>>("http://api.github.com/users/wind197/repos")
+    return this.http.get<Array<GithubRepo>>("https://api.github.com/users/wind197/repos")
   }
 }
 
