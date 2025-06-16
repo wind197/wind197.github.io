@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 0;
+}
+
+.github-repo {
+  border: solid black;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}

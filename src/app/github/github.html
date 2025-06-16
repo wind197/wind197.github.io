@@ -1,8 +1,10 @@
-<ul>
-  @for (repo of githubRepos; track repo.id) {
-    <li><a href="{{repo.html_url}}">{{repo.name}}</a>: {{repo.description}}</li>
-  }
-  @empty {
-    <li>Nothing shared publicly!</li>
-  }
-</ul>
+<div class="content">
+  <div class="flex-container">
+    @for (repo of githubRepos; track $index) {
+      <div class="github-repo">
+        <a href="{{repo.html_url}}"><span>{{repo.name}}</span></a>
+        <p>{{repo.description}}</p>
+      </div>
+    }
+  </div>
+</div>

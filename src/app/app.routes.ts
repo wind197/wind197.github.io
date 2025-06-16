@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import {Github} from './github/github';
-import {About} from './about/about';
 import {Home} from './home/home';
+import {Projects} from './projects/projects';
 
 export const routes: Routes = [
   {
@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: Github
   },
   {
-    path: "about",
-    component: About
+    path: "projects",
+    component: Projects
   }
 ];
