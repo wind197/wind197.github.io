@@ -1,1 +1,10 @@
-<p>github works!</p>
+<div class="content">
+  <div class="flex-container">
+    @for (repo of githubRepos; track $index) {
+      <div class="github-repo">
+        <a href="{{repo.html_url}}"><span>{{repo.name}}</span></a>
+        <p>{{repo.description}}</p>
+      </div>
+    }
+  </div>
+</div>
