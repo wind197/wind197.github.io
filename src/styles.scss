@@ -1,16 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 
-html, body {
+html {
   height: 100%;
+  @include mat.theme((
+    color: (
+      theme-type: dark
+    ),
+    typography: Roboto,
+    density: 0
+  ));
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100%;
 }
 
 main {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

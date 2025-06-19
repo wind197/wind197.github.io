@@ -25,4 +25,8 @@ export class Github implements OnInit {
 
     }
 
+    launchInNewTab(url: string): void {
+      window.open(url)
+    }
+
 }
