@@ -39,25 +39,6 @@ p {
   color: var(--gray-700);
 }
 
-main {
-  width: 100%;
-  min-height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  box-sizing: inherit;
-  position: relative;
-}
-
-.content {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
-}
-
 .content p {
   margin-top: 1.5rem;
 }
@@ -97,6 +78,16 @@ main {
     margin-block: 1.5rem;
   }
 }
+
+#home {
+  padding-top: 30vh;
+  max-width: 700px;
+}
+
+.fill-space {
+  min-height: 80%;
+}
+
 #bio {
   margin: 10px;
   padding-top: 50px;
